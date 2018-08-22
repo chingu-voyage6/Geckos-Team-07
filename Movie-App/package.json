@@ -1,0 +1,40 @@
+{
+  "name": "movies.-project",
+  "version": "1.0.0",
+  "description": "A movie streaming webiste project built with React",
+  "main": "index.js",
+  "scripts": {
+    "create": "webpack",
+    "start": "webpack-dev-server --open",
+    "build": "SET NODE_ENV='production' && webpack -p",
+    "deploy": "npm run build && firebase deploy",
+    "firebase-init": "firebase login && firebase init",
+    "firebase-logout": "firebase logout"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "author": "Aamir Sayani",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-tools": "^3.19.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
